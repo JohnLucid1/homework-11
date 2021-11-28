@@ -147,15 +147,15 @@ class PetFriends:  # Задание 1
 pf = PetFriends()
 
 key = pf.get_api_key(valid_email, valid_password)[1]['key']
-# print(key)
+print(key)
 
-# print(pf.post_information_about_pet_without_picture(
-#     key, 'John', "German Shepherd", '3'))
-# print(pf.delete_pet(key, 'c37452b2-d7bc-42d0-aafe-6197f93b1241'))
-# print(pf.delete_pet(key, 'bfbad65a-45f4-461a-9818-5b453014b16d'))
-# print(pf.post_information_with_picture(key, 'Pop',
-#                                        'Cat', '102', 'images\pop-cat.jpg'))
+print(pf.post_information_about_pet_without_picture(
+    key, 'John', "German Shepherd", '3'))
+print(pf.delete_pet(key, 'c37452b2-d7bc-42d0-aafe-6197f93b1241'))
+print(pf.delete_pet(key, 'bfbad65a-45f4-461a-9818-5b453014b16d'))
+print(pf.post_information_with_picture(key, 'Pop',
+                                       'Cat', '102', 'images\pop-cat.jpg'))
 print(pf.get_list_of_pets(key, 'my_pets'))
-# print(pf.update_information_about_pet(
-#     key, 'f7addcb1-8689-4d0f-93a6-4f66b2318671', 'popping', 'cat', '49'))
-# print(pf.set_pet_photo(key, 'f7addcb1-8689-4d0f-93a6-4f66b2318671', 'images/pop-cat.jpg'))
+print(pf.update_information_about_pet(
+    key, 'f7addcb1-8689-4d0f-93a6-4f66b2318671', 'popping', 'cat', '49'))
+print(pf.set_pet_photo(key, 'f7addcb1-8689-4d0f-93a6-4f66b2318671', 'images/pop-cat.jpg'))
